@@ -10,7 +10,7 @@ def safety():
     safety_settings = {
         "HARASSMENT": "BLOCK_NONE",
         "HATE": "BLOCK_NONE",
-        "SEXUAL": "BLOCK_NONE",
+        "SEXUAL": "BLOCK_MEDIUM_AND_ABOVE",
         "DANGEROUS": "BLOCK_NONE",
     }
     return safety_settings
