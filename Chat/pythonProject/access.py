@@ -1,3 +1,7 @@
+import google.generativeai as genai
+from google.colab import userdata
 def key():
-    GOOGLE_API_KEY='AIzaSyCQ5zig-N-Bl2QIXFbKTN_cYmepGVqQl1c'
+
+    api_key = userdata.get('SECRET_KEY')
+    GOOGLE_API_KEY = genai.configure(api_key=api_key)
     return GOOGLE_API_KEY
